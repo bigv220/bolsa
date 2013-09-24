@@ -98,9 +98,9 @@ function wpl_scripts_include() {
 		Include google maps 
 	-----------------------------------------------------------*/
 
-	wp_deregister_script('googlemaps');
-	wp_register_script('googlemaps', 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false', NULL, true);
-	wp_enqueue_script('googlemaps');
+	// wp_deregister_script('googlemaps');
+	// wp_register_script('googlemaps', 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false', NULL, true);
+	// wp_enqueue_script('googlemaps');
 		
 	/*-----------------------------------------------------------
     	Base custom scripts
