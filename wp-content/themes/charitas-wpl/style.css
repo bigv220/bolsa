@@ -12,6 +12,23 @@ Tags: black, blue, green, orange, pink, red, white, two-columns, right-sidebar, 
 
 @import url(http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic|Archivo+Narrow:400,400italic,700italic,700&subset=latin,cyrillic-ext,greek-ext,vietnamese,greek,latin-ext,cyrillic);
 
+@font-face {
+    font-family: 'Bahamaln';
+    src: url('css/font/bahamaln-webfont.eot');
+    src: url('css/font/bahamaln-webfont.eot?#iefix') format('embedded-opentype'),
+         url('css/font/bahamaln-webfont.woff') format('woff'),
+         url('css/font/bahamaln-webfont.ttf') format('truetype'),
+         url('css/font/bahamaln-webfont.svg#bahamaslightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.designby a {
+	font-family: 'Bahamaln';
+	font-size:23px;
+	text-decoration: none;
+	color:#FFF;
+}
 /* 
 	font-family: 'Arimo', sans-serif;
 	font-family: 'Archivo Narrow', sans-serif;
@@ -3642,3 +3659,4 @@ i span { margin-left: 6px;}
 @media print {
 	
 }
+

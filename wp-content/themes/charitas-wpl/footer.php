@@ -44,7 +44,7 @@
 								<?php dynamic_sidebar( 'f4-widgets' ); ?>
 							</div>
 						<?php endif; ?>
-
+						<img style="float:right;padding-top:80px;" src="<?php bloginfo('template_directory'); ?>/images/Facebook-icon-square.png" alt=""/>
 						<div class="clear"></div>
 					</div>
 				<?php }	?>
@@ -58,15 +58,23 @@
 					<!-- CopyRight -->
 					<div class="grid_8">
 						<p class="copy">
-							<?php if ( ot_get_option('wpl_copyright') ){
+							<?php if(qtrans_getLanguage()=='en' || qtrans_getLanguage()=='am') {
 								echo ot_get_option('wpl_copyright');
-							} ?>
+							} else {
+								echo "Copyright © Centre culturel Bolsahay 2013. Tous droits réservés.";
+							}?>
 						</p>
 					</div>
 					
 					<!-- Design By -->
 					<div class="grid_8">
-						<p class="designby"><?php _e('Designed by', 'wplook'); ?> <a href="http://themeforest.net/user/wplook" title="<?php _e('WPlook', 'wplook'); ?>" target="_blank">WPlook</a></p>
+						<p class="designby">
+							<?php if(qtrans_getLanguage()=='en' || qtrans_getLanguage()=='am') {
+								$str = "Developed by";
+							} else {
+								$str = "Développé par";
+							}?>
+							<?php echo $str; ?> <a href="http://www.sevanco.com/" target="_blank" class="sevanco" style="color:#FFF;">sevan<span style="color:orange">co</span></a></p>
 					</div>
 
 					<div class="clear"></div>
