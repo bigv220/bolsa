@@ -44,7 +44,7 @@
 								<?php dynamic_sidebar( 'f4-widgets' ); ?>
 							</div>
 						<?php endif; ?>
-						<img style="float:right;padding-top:80px;" src="<?php bloginfo('template_directory'); ?>/images/Facebook-icon-square.png" alt=""/>
+						<a href="https://www.facebook.com/bolsahay.centre" target="_blank"><img style="float:right;padding-top:80px;" src="<?php bloginfo('template_directory'); ?>/images/Facebook-icon-square.png" alt=""/></a>
 						<div class="clear"></div>
 					</div>
 				<?php }	?>

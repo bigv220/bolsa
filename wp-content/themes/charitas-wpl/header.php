@@ -44,12 +44,9 @@
 
 				<div class="grid_16">
 					
-					
-						<?php
-							if ( has_nav_menu( 'language' ) ) { 
-								wp_nav_menu( array('depth' => '3', 'theme_location' => 'language' ));
-						} ?> 
-
+						<div class="menu-language-menu-container">
+						<?php echo qtrans_generateLanguageSelectCode('text'); ?>
+						</div>
 
 					<ul class="tb-list">
 						<?php if ( ot_get_option('wpl_phone_number') != "") { ?>
@@ -110,8 +107,8 @@
 		<header id="branding" class="site-header" role="banner">
 			<div id="sticky_navigation">
 				<div class="container_16">
-					<hgroup class="fleft grid_5">
-							<h1 id="site-title">
+					<hgroup class="fleft grid_3">
+							<h1 id="site-title" align="center">
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> - <?php bloginfo('description'); ?>" rel="home">
 							<?php   
 							if ( ot_get_option('wpl_logo') != ''){?>
@@ -120,7 +117,13 @@
 									bloginfo('name');
 								}?>
 							</a></h1>
-								<h2 id="site-description"><?php bloginfo('description'); ?></h2>
+								<h2 id="site-description" align="center" style="white-space:nowrap;">
+									<?php if(qtrans_getLanguage()=='en' || qtrans_getLanguage()=='am') {
+										bloginfo('description');
+									} else {
+										echo "Centre culturel Bolsahay";
+									}?>
+								</h2>
 					</hgroup>
 
 					<nav role="navigation" class="site-navigation main-navigation grid_11" id="site-navigation">

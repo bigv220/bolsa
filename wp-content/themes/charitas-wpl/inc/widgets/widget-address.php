@@ -207,7 +207,7 @@ class wplook_address_widget extends WP_Widget {
 				
 				<p class="adr">
 					<?php if ( $street_address ){ ?>
-						<b><?php _e('Street Name', 'wplook'); ?></b> - <span class="street-address"> <?php echo $street_address; ?></span>
+						<span class="street-address"> <?php echo $street_address; ?></span>
 					<?php } ?>
 
 
@@ -230,7 +230,7 @@ class wplook_address_widget extends WP_Widget {
 				<?php } ?>
 
 				<?php if ( $email ){ ?>
-					<b><?php _e('E-mail:', 'wplook'); ?></b><span class="email"> <?php echo $email; ?></span><br />
+					<b><?php _e('E-mail:', 'wplook'); ?></b><span class="email"> <a href="mailto:<?php echo $email; ?>" style="font-size:15px;font-weight:normal;"><?php echo $email; ?></a></span><br />
 				<?php } ?>
 
 				<?php if ( $website ){ ?>	

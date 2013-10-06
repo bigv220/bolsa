@@ -29,6 +29,22 @@ Tags: black, blue, green, orange, pink, red, white, two-columns, right-sidebar, 
 	text-decoration: none;
 	color:#FFF;
 }
+#qtranslate-chooser li {
+	display: inline-block;
+    float: left;
+    margin: 0 1px 0 0;
+}
+#qtranslate-chooser li a {
+	background: none repeat scroll 0 0 #3B3B3D;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 2px 10px;
+    text-decoration: none;
+}
+#qtranslate-chooser li a:hover {
+	border-bottom: 1px solid #fff;
+	background: none repeat scroll 0 0 #e53b51;
+}
 /* 
 	font-family: 'Arimo', sans-serif;
 	font-family: 'Archivo Narrow', sans-serif;
