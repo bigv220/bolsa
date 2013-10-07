@@ -40,7 +40,7 @@
 
 						<?php if ( is_active_sidebar( 'f4-widgets' ) ) : ?>					
 							<!-- Forth Widget Area -->
-							<div class="grid_4">
+							<div class="grid_4" style="width:24%;">
 								<?php dynamic_sidebar( 'f4-widgets' ); ?>
 							</div>
 						<?php endif; ?>

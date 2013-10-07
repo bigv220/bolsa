@@ -3489,6 +3489,11 @@ i span { margin-left: 6px;}
 }
 
 @media (max-width: 768px) {
+
+	#site-title a img{
+		margin: 0 auto;
+	}
+	
 	.event-info .month-time {
 		margin-right: 24px;
 	}
